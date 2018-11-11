@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t YoshijiFujiwara/react-ci -f Dockerfile.dev .
+  - docker build -t yoshijifujiwara/react-ci -f Dockerfile.dev .
 
 script:
-  - docker run YoshijiFujiwara/react-ci npm run test -- --coverage
+  - docker run yoshijifujiwara/react-ci npm run test -- --coverage
